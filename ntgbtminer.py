@@ -443,7 +443,7 @@ def block_mine(block_template, coinbase_message, extranonce_start, address, time
                 if timeout and (time_stamp - time_start) > timeout:
                     return (None, hash_rate)
 
-            nonce += 1
+            nonce += 10000
         extranonce += 1
 
     # If we ran out of extra nonces, return none
